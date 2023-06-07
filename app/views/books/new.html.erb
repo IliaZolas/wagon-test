@@ -1,0 +1,14 @@
+<div class="page-content-area">
+<h1>Add a book</h1>
+        <%= simple_form_for [@book] do |f| %>
+            <%= f.input :title,
+                        required: true,
+                        autofocus: true,
+                        input_html: { autocomplete: "Title" }%>
+            <%= f.input :description,
+                        required: true,
+                        autofocus: true,
+                        input_html: { autocomplete: "Description" }%>
+            <%= f.submit "CREATE", class: "btn btn-primary" %>
+        <% end %>
+</div>
