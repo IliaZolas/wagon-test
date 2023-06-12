@@ -2,6 +2,7 @@
 <% @books.each do |book| %>
     <h1><%= book.title %></h1>
     <p><%= book.description %></p>
+    <p>Deploying</p>
 <% end %>
 <%= link_to "Add New Book", new_book_path , class: "button-main" %>
 
